@@ -2,7 +2,7 @@
 layout: page
 title: "Kota Kinabalu"
 date:		2019-04-01
-img_dir: "kota_kinabalu"
+img_dir: "borneo/kota_kinabalu"
 lat: 5.978814489864174
 lon: 116.07287406921385
 categories: kota

@@ -2,7 +2,7 @@
 layout: page
 title:  "Singapur"
 date:   2019-03-29
-img_dir: "singapore"
+img_dir: "borneo/singapore"
 lat: 1.345701455472609
 lon: 103.809814453125
 categories: singapur

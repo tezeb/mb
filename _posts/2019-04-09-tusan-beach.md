@@ -2,7 +2,7 @@
 layout: page
 title:  "Tusan Beach"
 date:   2019-04-09
-img_dir: "tusan_beach"
+img_dir: "borneo/tusan_beach"
 lat: 4.124947
 lon: 113.821746
 categories: tusan

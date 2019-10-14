@@ -2,7 +2,7 @@
 layout: page
 title:  "Kinabatangan River"
 date:   2019-04-03
-img_dir: "kinabatangan"
+img_dir: "borneo/kinabatangan"
 lat: 5.497699
 lon: 118.206139
 categories: kinabatangan

@@ -2,7 +2,7 @@
 layout: page
 title:  "Niah Caves"
 date:   3019-04-09
-img_dir: "niah_caves"
+img_dir: "borneo/niah_caves"
 lat: 4.124947
 lon: 113.821746
 categories: niah
