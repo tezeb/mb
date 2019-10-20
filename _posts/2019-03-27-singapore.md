@@ -1,8 +1,9 @@
 ---
-layout: page
+
 title:  "Singapur"
 date:   2019-03-29
-img_dir: "borneo/singapore"
+img_dir: "img/borneo/SIZE/singapore"
+img_hd:  "0000.jpg"
 lat: 1.345701455472609
 lon: 103.809814453125
 categories: singapur

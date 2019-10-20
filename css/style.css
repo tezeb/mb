@@ -1,6 +1,7 @@
 body {
 	font: 15px 'Montserrat', sans-serif; 
 	color: #00f;
+  margin: 0px;
 }
 
 #body-margin {
@@ -25,6 +26,11 @@ a:hover {
 .new_post img {
   width: 100%;
   border: solid 3px #ff0;
+
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .new_post_first {
@@ -40,6 +46,7 @@ a:hover {
 #new_post_excerpt .more {
   float: right;
   display: inline-block;
+  margin-bottom: 15px;
 }
 
 #new_footer {
@@ -85,6 +92,10 @@ a:hover {
   transform: rotate(-90.0deg);
 }
 
+#new_go_to_insta div {
+  position: absolute;
+}
+
 #new_go_to_map span {
   display: block;
   float: right;
@@ -94,9 +105,8 @@ a:hover {
 
 #main-page {
 	background-color: white;
-	margin: auto;
+	margin: 0 auto;
 	padding: 0;
-  min-width: 930px;
   max-width: 1120px;
 }
 #main-headerimg {
@@ -214,8 +224,18 @@ div.circle {
   margin-bottom: 32px;
 }
 
-.post-content p {
+.post-content {
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.post-content p,
+#new_post_excerpt p {
 	line-height: 160%;
+}
+
+.post-content h3 {
+  font-size: 15px;
 }
 
 .full {

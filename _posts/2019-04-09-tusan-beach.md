@@ -1,8 +1,9 @@
 ---
-layout: page
+
 title:  "Tusan Beach"
 date:   2019-04-09
-img_dir: "borneo/tusan_beach"
+img_dir: "img/borneo/SIZE/tusan_beach"
+img_hd:  "0325.jpg"
 lat: 4.124947
 lon: 113.821746
 categories: tusan

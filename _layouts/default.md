@@ -1,24 +1,51 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="pl">
+<!DOCTYPE HTML>
+<html lang="pl">
 
- {% include head.md %}
+	<head>
 
- <body>
-  <div id="page">
-   <div id="header">
-    <div id="headerimg">
-     <a href="{{ site.url }}"><img src="/img/mb_full.png" /></a>
-    </div>
-		<div id="menu">
-			<a href="">MAPA</a>&nbsp;
-			<a href="">MIEJSCA</a>&nbsp;
-			<a href="">FOTO</a>
+		{% include head.md %}
+		{% if page.map %}
+		{% include head_map.md %}
+		{% endif %}
+
+	</head>
+
+	<body>
+
+		<div id="body-margin">
+			<div id="main-page">
+				<div id="main-header">
+					<div id="main-menu">
+						<ul>
+							<li><a href="/" title="Blog">Blog</a></li>
+							<li class="medium"><a href="/" title="Przewodnik">Przewodnik</a></li>
+							<li class="medium"><a href="/" title="Foto">Foto</a></li>
+							<li class="wide"><a href="/" title="Miejsca">Miejsca</a></li>
+							<li class="wide"><a href="/" title="Kontakt">Kontakt</a></li>
+							<li><a title="&#9776;" id="nav-toggle" href="#">&#9776;</a></li>
+						</ul>
+					</div>
+					<div id="main-headerimg">
+						<a href="{{ site.url }}"><img src="/img/mb_full.png" /></a>
+					</div>
+				</div>
+
+
+
+				<div id="main-content">
+
+					{{ content }}
+
+				</div>
+
+				<div id="main-footer">
+
+					{% include footer.html %}
+
+				</div>
+
+			</div>
 		</div>
-   </div>
-   <div id="content">
 
-    {{ content }}
-
-   </div>
- </body>
+	</body>
 </html>

@@ -15,4 +15,7 @@
 
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,800&amp;subset=latin-ext" rel="stylesheet"> 
   <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" media='only screen and (max-width: 1280px)' href="/css/wide.css" />
+  <link rel="stylesheet" media='only screen and (max-width: 930px)' href="/css/medium.css" />
+  <link rel="stylesheet" media='only screen and (max-width: 640px)' href="/css/small.css" />
 
