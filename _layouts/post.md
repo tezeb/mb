@@ -15,7 +15,8 @@ layout: default
 
 	<div class="gallery">
 
-		{% assign image_files = site.static_files | where: "thumb", true | where_exp: "image", "image.path contains page.img_dir" %}
+		{% assign img_dir = page.img_dir | replace: "SIZE", "thumbs" %}
+		{% assign image_files = site.static_files | where: "thumb", true | where_exp: "image", "image.path contains img_dir" %}
 
 		<div class="nav"><a href="" id="left_nav"> &lt; </a></div>
 		<div class="strip" id="strip">

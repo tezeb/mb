@@ -26,3 +26,12 @@
 .medium {
 	display: none;
 }
+
+#new_footer {
+	flex-direction: column;
+}
+
+#new_contact > span {
+	float: none;
+	width: 50%;
+}
