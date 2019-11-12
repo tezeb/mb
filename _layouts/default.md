@@ -18,7 +18,7 @@
 					<div id="main-menu">
 						<ul>
 							<li><a href="/" title="Blog">Blog</a></li>
-							<li><a href="/" title="Mapa">Mapa</a></li>
+							<li><a onclick="javascript:wip();" title="Mapa">Mapa</a></li>
 							<li><a href="#kontakt" title="Kontakt">Kontakt</a></li>
               {% comment %}
 							<li class="medium"><a href="/" title="Przewodnik">Przewodnik</a></li>

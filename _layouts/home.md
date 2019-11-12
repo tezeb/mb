@@ -39,7 +39,7 @@ layout: default
   <div class="wide spacer">
     {% if counter == 0 %}
     <div id="new_go_to_map">
-      <a href="/mapa.html">
+      <a onclick="javascript:wip();">
         Wejdź<br/>na mapę<br/>i zobacz<br/>gdzie teraz<br/>jesteśmy!
       </a>
     </div>
@@ -54,7 +54,10 @@ layout: default
   var data=null;
   var post_cnt=4;
   function loadMore() {
+    wip();
+    return;
     if(data == null) {
+    /*
       $.ajax({
         url: getProtocol() + 'vimeo.com/api/v2/video/' + video.id + '.json',
         dataType: 'jsonp',
@@ -62,7 +65,8 @@ layout: default
           dataFrame.thumbsReady = true;
           updateData(data, {img: json[0].thumbnail_large, thumb: json[0].thumbnail_small}, dataFrame.i, fotorama);
         }
-      };
+      });
+      */
     }
     else {
       alert('just display it');

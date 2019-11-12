@@ -18,4 +18,9 @@
   <link rel="stylesheet" media='only screen and (max-width: 1280px)' href="/css/wide.css" />
   <link rel="stylesheet" media='only screen and (max-width: 930px)' href="/css/medium.css" />
   <link rel="stylesheet" media='only screen and (max-width: 640px)' href="/css/small.css" />
-
+  <script type="text/javascript">
+  function wip() {
+    alert("O nie! Nad tą sekcją właśnie pracujemy.\nWpadnij do nas za kilka dni! :)");
+    return false;
+  }
+  </script>
