@@ -225,18 +225,12 @@ a:hover {
 }
 #main-content {
 	border: solid 0px red;
-	/*
-   * needed for map? TODO: 09.19
-  overflow: visible;
-  min-height: 600px;
-  */
 }
 #map {
 	border: solid 2px #00f;
   height: 600px;
   min-height: 600px;
 	margin: 0 auto;
-	float: left;
 	position: relative;
 }
 #main-mc {

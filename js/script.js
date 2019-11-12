@@ -24,6 +24,7 @@ myCircleMarker = L.Marker.extend({
  }
 });
 
+/*
 function showPost() {
  $('#main-post-container').show();
  var src = this.options.url;
@@ -35,27 +36,12 @@ function showPost() {
      });
      map.fitBounds(markers.getBounds(), {maxZoom: 8});
    });
- /*
- $('#loading').show();
- $('#postcard').hide();
- $('#postcard-container').show();
- $('#postcard-date').html(this.options.image_date);
- $('#postcard-eta').html("PozostaÅ‚o: " + this.options.image_eta);
- var downloadingImage = new Image();
- downloadingImage.onload = function() {
-  image.src = this.src;
-  $('#postcard').fadeIn(1000);
-  $('#loading').hide();
-  $('#postcard-error').hide();
- };
- downloadingImage.onerror = function() {
-  $('#loading').hide();
-  $('#postcard').hide();
-  $('#postcard-error').html("No image!");
-  $('#postcard-error').show();
- }
- downloadingImage.src = "upload/" + this.options.image_path;
- */
+}
+*/
+
+function gotoUrl() {
+ var src = this.options.url;
+ window.open(src, '_blank'); 
 }
 
 function hideImage() {
@@ -65,50 +51,59 @@ function hideImage() {
 }
 
 var markers = L.geoJson(null, {});
-var line = L.polyline([], {
-//  color: '#9242f4',
-  color: '#ff0',
-  weight: 4,
-  opacity: 1,
-  smoothFactor: 1,
-  dashArray: '1, 10',
-  clickable: true,
-  });
 
 map.on('load', function() {
   $('#zoom').attr('value', map.getZoom());
   });
 
-function addToMarkers(point, url) {
-	line.addLatLng(point);
-	var marker = L.marker(point, {
-		icon : L.divIcon({className : 'circle',
-										 iconSize : [ 10, 10 ]}),
-		//   line : line,
-		riseOnHover: true,
-		url: url,
-	});
-	marker.on('click', showPost, marker);
-	markers.addLayer(marker); 
-} 
+function createLine(datapoints) {
+  var line = L.polyline([], {
+  //  color: '#9242f4',
+    color: '#ff0',
+    weight: 4,
+    opacity: 1,
+    smoothFactor: 1,
+    dashArray: '1, 10',
+    clickable: true,
+  });
+  var l = datapoints.length;
+  if( l > 0) {
+    for (i=0; i<l ;i++) {
+      var lng = datapoints[i].lon;
+      var lat = datapoints[i].lat;
+      var point = new L.LatLng(lat,lng);
+      var url = datapoints[i].url;
+
+      line.addLatLng(point);
+      var marker = L.marker(point, {
+        icon : L.divIcon({className : 'circle',
+                         iconSize : [ 10, 10 ]}),
+        //   line : line,
+        riseOnHover: true,
+        url: url,
+      });
+      marker.on('click', gotoUrl, marker);
+      markers.addLayer(marker); 
+      line.addTo(map);
+    }
+  }
+}
 
 $(document).ready(function(){
+  $.ajax('gps.json', {'success': function(datapoints) {
+     for (var key in datapoints) {
+       console.log(key);
+       createLine(datapoints[key]);
+     }
+   map.fitBounds(markers.getBounds(), {maxZoom: 8});
+   map.addLayer(markers);
+  }});
+  /* 
  var l = datapoints.length;
  var m = L.marker(kuching, {clickable: false});
  m.setOpacity(0);
   markers.addLayer(m);
-
- if( l > 0) {
-   for (i=0; i<l ;i++) {
-    var lng = datapoints[i].lon;
-    var lat = datapoints[i].lat;
-    var point = new L.LatLng(lat,lng);
-    addToMarkers(point, datapoints[i].url);
-   }
- map.fitBounds(markers.getBounds(), {maxZoom: 8});
- map.addLayer(markers);
- line.addTo(map);
- }
+ */
 }); 
 
 function showPlace(url) {

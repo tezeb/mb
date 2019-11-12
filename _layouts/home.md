@@ -39,7 +39,7 @@ layout: default
   <div class="wide spacer">
     {% if counter == 0 %}
     <div id="new_go_to_map">
-      <a onclick="javascript:wip();">
+      <a href="/map.html">
         Wejdź<br/>na mapę<br/>i zobacz<br/>gdzie teraz<br/>jesteśmy!
       </a>
     </div>

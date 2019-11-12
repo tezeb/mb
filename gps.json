@@ -1,0 +1,12 @@
+---
+---
+{% assign posts_by_trip = site.posts | group_by: 'trip' %}
+
+{
+{% for group in posts_by_trip %}
+  {{ group['name'] | jsonify }}:[
+  {% assign items = group['items'] | sort: 'date' %}
+    {% for post in items %}
+  { "lat": {{ post.lat }}, "lon": {{ post.lon }}, "url": "{{ post.url }}"}{% if forloop.last == false %},{% endif %}{% endfor %}]
+{% if forloop.last == false %},{% endif %}{% endfor %}
+}
