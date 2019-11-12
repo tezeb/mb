@@ -1,5 +1,17 @@
 #main-page {
 	min-width: 770px;
 	max-width: 1280px;
-	margin: 0 80px;
+	margin: 20px 80px;
+}
+
+#main-headerimg {
+	margin: 0 auto 25px;
+}
+
+#main-menu ul {
+  padding: 0 60% 0 0;
+}
+
+.new_post {
+  margin-bottom: 45px;
 }

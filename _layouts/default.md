@@ -18,11 +18,14 @@
 					<div id="main-menu">
 						<ul>
 							<li><a href="/" title="Blog">Blog</a></li>
+							<li><a href="/" title="Mapa">Mapa</a></li>
+							<li><a href="#kontakt" title="Kontakt">Kontakt</a></li>
+              {% comment %}
 							<li class="medium"><a href="/" title="Przewodnik">Przewodnik</a></li>
 							<li class="medium"><a href="/" title="Foto">Foto</a></li>
 							<li class="wide"><a href="/" title="Miejsca">Miejsca</a></li>
-							<li class="wide"><a href="/" title="Kontakt">Kontakt</a></li>
 							<li><a title="&#9776;" id="nav-toggle" href="#">&#9776;</a></li>
+              {% endcomment %}
 						</ul>
 					</div>
 					<div id="main-headerimg">

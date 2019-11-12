@@ -23,6 +23,10 @@ a:hover {
   display: flex;
 }
 
+.tags {
+  display: none;
+}
+
 .new_post img {
   width: 100%;
   border: solid 3px #ff0;
@@ -62,6 +66,10 @@ a:hover {
   color: #f0f;
 }
 
+#new_contact a {
+  color: #f0f;
+}
+
 #new_contact > span {
   display: inline-block;
   float: right;
@@ -75,7 +83,7 @@ a:hover {
   height: 100px;
 }
 
-#new_go_to_map, #new_go_to_insta {
+#new_go_to_map {
   margin-left: 20px;
   flex: 3;
   color: #f0f;
@@ -83,36 +91,87 @@ a:hover {
   font-size: 23px;
   font-weight: 800;
   align-self: center;
-  /*  TODO 09.19 */
-  padding-bottom: 200px;
-  padding-right: 20px;
+  padding: 50% 20px;
+  height 100%;
+}
+
+.spacer {
+  flex: 3;
+}
+
+#new_go_to_insta a {
+  color: #f0f;
+  transform: rotate(-90.0deg);
+  display: inline-block;
+  top: 50%;
+  left: -50%;
+  position: absolute;
+  font-size: 14px;
+  letter-spacing: 0.3ch;
 }
 
 #new_go_to_insta {
-  transform: rotate(-90.0deg);
+  font-size: 15px;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding: 0;
+  flex: 3;
+  position: relative;
+  height: 50%;
 }
+
+#new_go_to_insta a::hover {
+  font-weight: 800;
+}
+
+#new_go_to_insta a::after {
+  font-size: 14px;
+  letter-spacing: 0.3ch;
+  content: attr(title);
+  font-weight: 800;
+  height: 0;
+  overflow: hidden;
+  display: block;
+/*  visibility: hidden;*/
+}
+
 
 #new_go_to_insta div {
   position: absolute;
 }
 
-#new_go_to_map span {
+#new_go_to_map a {
   display: block;
   float: right;
+  color: #f0f;
+}
+
+#new_load_more {
+  text-align: right;
+  margin-top: -15px;
+}
+
+#new_load_more a,
+#new_load_more a:hover {
+  color: #f0f;
+}
+
+#main-footer {
+  margin-top: 40px;
 }
 
 /*  OLD */
 
 #main-page {
 	background-color: white;
-	margin: 0 auto;
+	margin: 20px auto;
 	padding: 0;
   max-width: 1120px;
 }
 #main-headerimg {
+	margin: 0 auto 15px;
 	border: solid 0px black;
 	height: 100px;
-	margin: 0 auto 10px;
 	text-align: center;
 }
 #main-headerimg img {
@@ -137,29 +196,32 @@ a:hover {
   display: inline-block;
   text-transform: uppercase;
   text-align: center;
-  font-weight: 600;
-  letter-spacing: 0.1ch;
+  font-weight: 400;
+  font-size: 13px;
+  letter-spacing: 0.3ch;
 }
 
 #nav-toggle:hover {
   font-size: 17px;
+  font-weight: 400;
 }
 
 #nav-toggle::after {
   font-size: 17px;
   overflow: hidden;
+  font-weight: 400;
 }
 
 #main-menu li a::after {
   content: attr(title);
-  font-weight: bold;
+  font-weight: 400;
   height: 0;
   overflow: hidden;
   display: block;
 /*  visibility: hidden;*/
 }
 #main-menu li a::hover {
-  font-weight: 800;
+  font-weight: 400;
 }
 #main-content {
 	border: solid 0px red;

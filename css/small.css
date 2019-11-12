@@ -1,7 +1,7 @@
 #main-page {
 	min-width: 240px;
 	max-width: 640px;
-	margin: 0 20px;
+	margin: 20px 20px;
 }
 
 #main-footer {
@@ -34,4 +34,12 @@
 #new_contact > span {
 	float: none;
 	width: 50%;
+}
+
+#main-menu ul {
+  padding: 0;
+}
+
+.new_post {
+  margin-bottom: 15px;
 }
