@@ -10,10 +10,13 @@ categories: kota
 ---
 
 {% include subtitle.md title="Pierwsze Kota za płota" date="Dzień 1 (28.03.2019)" %}
+<!--more_start-->
 Kota Kinabalu jest stolicą stanu Sabah, który obejmuje północną część malezyjskiego fragmentu Borneo.
 Według opinii znalezionych w&nbsp;sieci i&nbsp;zasłyszanych podczas naszej podróży nie jest warte szczególnej uwagi.
 Jednak chcąc zwiedzić Borneo, ciężko ominąć to miasto, bo jest dobrze skomunikowane z&nbsp;resztą wyspy.
 Z tego powodu byliśmy w&nbsp;Kota aż trzy razy.
+<!--more-->
+
 
 Pierwszy wieczór spędziliśmy tu po przylocie z&nbsp;Johor Bahru.
 Z lotniska dojechaliśmy do centrum autobusem za 5 MYR od osoby.

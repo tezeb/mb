@@ -10,11 +10,12 @@ categories: kinabatangan
 ---
 
 {% include subtitle.md date="Dzień 1 (3.04.2019)" title="" %}
-
+<!--more_start-->
 Czasami w&nbsp;podróży trzeba iść na kompromis pomiędzy swobodą, a&nbsp;szybkością.
 Bardzo zależało nam żeby zobaczyć dzikie zwierzęta w&nbsp;naturalnym lesie równikowym, a&nbsp;w Sabah najlepszym do tego miejscem jest Sukau, nad rzeką Kinabatangan.
 Jest to mała wioska, leżąca niecałe 100 kilometrów od Sandakanu, jednak nie jest łatwo się tam dostać, a&nbsp;my mieliśmy na to tylko 2 dni.
 Dlatego zdecydowaliśmy się na zorganizowaną wycieczkę 2D1N (2 dni, 1 noc), za horrendalne 320 MYR od osoby.
+<!--more-->
 Cena obejmowała przejazdy, nocleg, wyżywienie oraz co najważniejsze 2 pływania łódką po rzece w&nbsp;celu obserwacji zwierząt i&nbsp;jeden nocny spacer po dżungli.
 Jak się okazało, w&nbsp;Malezji 2 dni nie oznaczają 48 godzin, ponieważ wycieczka zaczęła się o&nbsp;10:00 pierwszego dnia, a
 skończyła o&nbsp;11:00 kolejnego.

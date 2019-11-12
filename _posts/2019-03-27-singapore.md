@@ -10,7 +10,7 @@ categories: singapur
 ---
 
 {% include subtitle.md date="Dzień 0 (24.03.2019)" %}
-
+<!--more_start-->
 Naszą podróż rozpoczęliśmy od zwiedzania Singapuru.
 Lecieliśmy z&nbsp;Warszawy Qatar Airways z&nbsp;przesiadką w&nbsp;Doha.
 Miało być szybko, ale niestety nastąpiło 2 godzinne opóźnienie.
@@ -20,6 +20,7 @@ Na plus dla Qatar Airways, trzeba też policzyć roznoszone w&nbsp;środku nocy 
 oraz możliwość dostania kocy (wystarczy poprosić!).
 Piloci starali się nadrobić, ale i&nbsp;tak na lotnisku Changi w&nbsp;Singapurze wylądowaliśmy
 o 16:30 z&nbsp;ponad 1,5 godzinnym opóźnieniem.
+<!--more-->
 Za radą znajomej zaplanowaliśmy nocleg w&nbsp;Johor Bahru, w&nbsp;Malezji ze względu na znacznie niższe ceny.
 Jedyną wadą była konieczność codziennego przekraczania granicy.
 Informacja wizualna na lotnisku była dość kiepska, zresztą wiedza w&nbsp;informacji
