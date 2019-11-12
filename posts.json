@@ -1,0 +1,8 @@
+---
+---
+[{% for post in site.posts %}
+    {
+  "url": {{ post.url | jsonify }},
+  "title": {{ post.title | jsonify }},
+  "excerpt": {{ post.excerpt | jsonify }}
+}{% if forloop.last == false %},{% endif %}{% endfor %}]
