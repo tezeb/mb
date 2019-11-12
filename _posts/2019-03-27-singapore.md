@@ -1,7 +1,8 @@
 ---
 
 title:  "Singapur"
-date:   2019-03-29
+date:   2019-03-27
+trip: borneo_2019
 img_dir: "img/borneo/SIZE/singapore"
 img_hd:  "0000.jpg"
 lat: 1.345701455472609

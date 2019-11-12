@@ -2,6 +2,7 @@
 
 title:  "Niah Caves"
 date:   3019-04-09
+trip: borneo_2019
 img_dir: "img/borneo/SIZE/niah_caves"
 img_hd:  "0749.jpg"
 lat: 4.124947

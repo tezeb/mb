@@ -2,6 +2,7 @@
 
 title:  "Tusan Beach"
 date:   2019-04-09
+trip: borneo_2019
 img_dir: "img/borneo/SIZE/tusan_beach"
 img_hd:  "0325.jpg"
 lat: 4.124947
