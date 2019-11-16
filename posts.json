@@ -4,5 +4,7 @@
     {
   "url": {{ post.url | jsonify }},
   "title": {{ post.title | jsonify }},
-  "excerpt": {{ post.excerpt | jsonify }}
+  "excerpt": {{ post.excerpt | jsonify }},
+  {% capture img %}{{ post.img_dir | replace: "SIZE", "full" }}/{{ post.img_hd }}{% endcapture %}
+  "img" : {{ img | jsonify }}
 }{% if forloop.last == false %},{% endif %}{% endfor %}]

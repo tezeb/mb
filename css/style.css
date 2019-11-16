@@ -403,6 +403,10 @@ div.circle {
   border-color: #f0f;
 }
 
+.hidden_post {
+  display: none;
+}
+
 /*  TMP
 #main-page {
   border: solid 1px #F00;

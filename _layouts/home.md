@@ -2,6 +2,7 @@
 layout: default
 ---
 
+<div id="posts">
 {% assign counter = 0 %}
 {% for post in site.posts limit:4 %}
 <div class="new_post">
@@ -49,27 +50,58 @@ layout: default
 </div>
 {% assign counter = counter | plus: 1 %}
 {% endfor %}
+</div>
 <div id="new_load_more">
 <script type="text/javascript">
   var data=null;
-  var post_cnt=4;
+  var post_cnt={{ counter }};
+  function showPosts() {
+    if (data != null) {
+      for (i = 0; i < 4 && post_cnt < data.length; i++) {
+        console.log(`i: ${i}, post_cnt: ${post_cnt}`);
+        var post = data[ post_cnt ];
+        //  TODO: enable tags
+        post.tag = Array();
+        //  TODO: add image preloading
+        var post_html=`<div class="new_post hidden_post"> ${ post_cnt%2 == 1 ? '<div class="wide spacer"></div>' : '' }
+    <div class="new_post_first" >
+      <a href="${ post.url }"><img src="${ post.img }/${ post.img_hd }" /></a>
+      <!--<div class="tags">
+        <a href="/lista_postów_z_tagiem">#${ post.tag }</a>
+      </div>-->
+      <header class="post-header">
+        <a href="${ post.url }"><h1 class="post-title">${ post.title }</h1></a>
+      </header>
+      <div id="new_post_excerpt">
+        ${ post.excerpt }
+        ${ post.more ? '<span class="more"><a href="{{ post.url }}">&#x203A;&nbsp;czytaj dalej</a></span>' : ''}
+      </div>
+    </div>
+    ${ post_cnt%2 == 0 ? '<div class="wide spacer"></div>' : '' }
+  </div>`;
+
+        $('#posts').append(post_html);
+        post_cnt += 1;
+      }
+      $('#posts > div.hidden_post').slideDown("slow", function() {
+        $(this).css({display: "flex"});
+      });
+      if ( post_cnt >= data.length ) {
+        $('#new_load_more').slideUp();
+      }
+    }
+  }
   function loadMore() {
-    wip();
-    return;
     if(data == null) {
-    /*
-      $.ajax({
-        url: getProtocol() + 'vimeo.com/api/v2/video/' + video.id + '.json',
-        dataType: 'jsonp',
+      $.ajax('/posts.json', {
         success: function (json) {
-          dataFrame.thumbsReady = true;
-          updateData(data, {img: json[0].thumbnail_large, thumb: json[0].thumbnail_small}, dataFrame.i, fotorama);
+          data = json;
+          showPosts();
         }
       });
-      */
     }
     else {
-      alert('just display it');
+      showPosts();
     }
   }
 </script>
