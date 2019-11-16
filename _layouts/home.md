@@ -58,7 +58,7 @@ layout: default
   function preloadImg(img_path) {
     setTimeout(function() {
         new Image().src = img_path;
-    }, 1000);
+    }, 10);
   }
   function showPosts() {
     if (data != null) {
