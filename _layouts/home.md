@@ -55,10 +55,13 @@ layout: default
 <script type="text/javascript">
   var data=null;
   var post_cnt={{ counter }};
-  function preloadImg(img_path) {
-    setTimeout(function() {
-        new Image().src = img_path;
-    }, 10);
+  function preloadNextImg() {
+    for (i = 0; i < 4 && post_cnt + i < data.length; i++) {
+      var post = data[post_cnt + i];
+      setTimeout(function() {
+                 new Image().src = post.img;
+                 }, 100);
+    }
   }
   function showPosts() {
     if (data != null) {
@@ -67,7 +70,6 @@ layout: default
         var post = data[ post_cnt ];
         //  TODO: enable tags
         post.tag = Array();
-        preloadImg( post.img );
         var post_html=`<div class="new_post hidden_post"> ${ post_cnt%2 == 1 ? '<div class="wide spacer"></div>' : '' }
     <div class="new_post_first" >
       <a href="${ post.url }"><img src="${ post.img }" /></a>
@@ -94,21 +96,28 @@ layout: default
       if ( post_cnt >= data.length ) {
         $('#new_load_more').slideUp();
       }
+      else {
+        preloadNextImg();
+      }
     }
   }
   function loadMore() {
     if(data == null) {
+      setTimeout(loadMore, 100);
+      return;
+    }
+    showPosts();
+  }
+  $(document).ready(function(){
+    if(data == null) {
       $.ajax('/posts.json', {
         success: function (json) {
           data = json;
-          showPosts();
+          preloadNextImg();
         }
       });
     }
-    else {
-      showPosts();
-    }
-  }
+  })
 </script>
 <a onclick="javascript:loadMore();">&#x00BB;&nbsp;więcej postów</a>
 </div>
