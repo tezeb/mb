@@ -55,6 +55,11 @@ layout: default
 <script type="text/javascript">
   var data=null;
   var post_cnt={{ counter }};
+  function preloadImg(img_path) {
+    setTimeout(function() {
+        new Image().src = img_path;
+    }, 1000);
+  }
   function showPosts() {
     if (data != null) {
       for (i = 0; i < 4 && post_cnt < data.length; i++) {
@@ -62,10 +67,10 @@ layout: default
         var post = data[ post_cnt ];
         //  TODO: enable tags
         post.tag = Array();
-        //  TODO: add image preloading
+        preloadImg( post.img );
         var post_html=`<div class="new_post hidden_post"> ${ post_cnt%2 == 1 ? '<div class="wide spacer"></div>' : '' }
     <div class="new_post_first" >
-      <a href="${ post.url }"><img src="${ post.img }/${ post.img_hd }" /></a>
+      <a href="${ post.url }"><img src="${ post.img }" /></a>
       <!--<div class="tags">
         <a href="/lista_postów_z_tagiem">#${ post.tag }</a>
       </div>-->
