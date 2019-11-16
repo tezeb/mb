@@ -81,7 +81,7 @@ layout: default
       </header>
       <div id="new_post_excerpt">
         ${ post.excerpt }
-        ${ post.more ? '<span class="more"><a href="{{ post.url }}">&#x203A;&nbsp;czytaj dalej</a></span>' : ''}
+        ${ post.more ? '<span class="more"><a href="' + post.url + '">&#x203A;&nbsp;czytaj dalej</a></span>' : ''}
       </div>
     </div>
     ${ post_cnt%2 == 0 ? '<div class="wide spacer"></div>' : '' }

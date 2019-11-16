@@ -6,5 +6,6 @@
   "title": {{ post.title | jsonify }},
   "excerpt": {{ post.excerpt | jsonify }},
   {% capture img %}{{ post.img_dir | replace: "SIZE", "full" }}/{{ post.img_hd }}{% endcapture %}
-  "img" : {{ img | jsonify }}
+  "img" : {{ img | jsonify }},
+  "more" : true
 }{% if forloop.last == false %},{% endif %}{% endfor %}]
