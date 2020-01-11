@@ -1,3 +1,7 @@
 [submodule "img/borneo"]
 	path = img/borneo
 	url = https://github.com/tezeb/borneo_img
+
+[submodule "img/georgia"]
+	path = img/georgia
+	url = https://github.com/tezeb/georgia_img
