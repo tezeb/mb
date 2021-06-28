@@ -104,7 +104,7 @@ a:hover {
   transform: rotate(-90.0deg);
   display: inline-block;
   top: 50%;
-  left: -50%;
+  left: -49%;
   position: absolute;
   font-size: 14px;
   letter-spacing: 0.3ch;
