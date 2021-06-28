@@ -1,10 +1,10 @@
 ---
-layout: default
+layout: borneo/default
 ---
 
 <div id="posts">
 {% assign counter = 0 %}
-{% for post in site.posts limit:4 %}
+{% for post in site.categories.borneo limit:4 %}
 <div class="new_post">
   {% assign cmod = counter | modulo: 2 %}
   {% if cmod == 1 %}
@@ -19,7 +19,7 @@ layout: default
   </div>
   {% endif %}
   <div class="new_post_first" >
-    <a href="{{ post.url }}"><img src="{{ post.img_dir | replace: "SIZE", "full" }}/{{ post.img_hd }}" /></a>
+    <a href="{{ post.url }}"><img src="/{{ post.img_dir | replace: "SIZE", "full" }}/{{ post.img_hd }}" /></a>
     <div class="tags">
       {% for tag in post.categories %}
       <a href="/lista_postów_z_tagiem">#{{ tag }}</a>
@@ -40,7 +40,7 @@ layout: default
   <div class="wide spacer">
     {% if counter == 0 %}
     <div id="new_go_to_map">
-      <a href="/map.html">
+      <a href="/{{page.prefix}}/map.html">
         Wejdź<br/>na mapę<br/>i zobacz<br/>gdzie teraz<br/>jesteśmy!
       </a>
     </div>
@@ -72,7 +72,7 @@ layout: default
         post.tag = Array();
         var post_html=`<div class="new_post hidden_post"> ${ post_cnt%2 == 1 ? '<div class="wide spacer"></div>' : '' }
     <div class="new_post_first" >
-      <a href="${ post.url }"><img src="${ post.img }" /></a>
+      <a href="${ post.url }"><img src="/${ post.img }" /></a>
       <!--<div class="tags">
         <a href="/lista_postów_z_tagiem">#${ post.tag }</a>
       </div>-->
@@ -110,7 +110,7 @@ layout: default
   }
   $(document).ready(function(){
     if(data == null) {
-      $.ajax('/posts.json', {
+      $.ajax('/{{page.prefix}}/posts_borneo.json', {
         success: function (json) {
           data = json;
           preloadNextImg();

@@ -7,10 +7,10 @@ img_dir: "img/borneo/SIZE/kinabatangan"
 img_hd: "0509.jpg"
 lat: 5.497699
 lon: 118.206139
-categories: kinabatangan
+tags: kinabatangan
 ---
 
-{% include subtitle.md date="Dzień 1 (3.04.2019)" title="" %}
+{% include {{page.inc_prefix}}subtitle.md date="Dzień 1 (3.04.2019)" title="" %}
 <!--more_start-->
 Czasami w&nbsp;podróży trzeba iść na kompromis pomiędzy swobodą, a&nbsp;szybkością.
 Bardzo zależało nam żeby zobaczyć dzikie zwierzęta w&nbsp;naturalnym lesie równikowym, a&nbsp;w Sabah najlepszym do tego miejscem jest Sukau, nad rzeką Kinabatangan.

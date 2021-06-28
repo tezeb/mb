@@ -7,16 +7,15 @@ img_dir: "img/borneo/SIZE/tusan_beach"
 img_hd:  "0316.jpg"
 lat: 4.124947
 lon: 113.821746
-categories: tusan
-tags: borneo
+tags: tusan
 ---
 
-{% include subtitle.md date="Dzień 1 (9.04.2019)" title="Welcome to Sarawak" %}
+{% include {{page.inc_prefix}}subtitle.md date="Dzień 1 (9.04.2019)" title="Welcome to Sarawak" %}
 <!--more_start-->
 Do Miri przyjechaliśmy po 17.00. Z dworca zamówiliśmy Graba, który za kilkanaście ringgitów zawiózł nas do hostelu. To nasz pierwszy przejazd po stanie Sarawak i od razu było widać ogromną różnicę w porównaniu do miejsc, w których byliśmy do tej pory. Ulice były zadbane i czyste, budynki lepiej utrzymane, a całe miasto sprawiało wrażenie bardziej rozwiniętego. Nasz hostel znajdował się w dość nowej dzielnicy, blisko plaży i parku. W sąsiedztwie były hipsterskie knajpy z jedzeniem i alkoholem oraz zadbane i zamiecione chodniki (niespotykane wcześniej!). Tym razem trafiliśmy na mały, ładny i pachnący hostelik.
 <!--more-->
 
-{% include subtitle.md date="Dzień 2 (10.04.2019)" title="W poszukiwaniu najpiękniejszych plaż" %}
+{% include {{page.inc_prefix}}subtitle.md date="Dzień 2 (10.04.2019)" title="W poszukiwaniu najpiękniejszych plaż" %}
 
 Rano zjedliśmy tradycyjną laksę na śniadanie i nie chcąc tracić czasu w mieście ruszyliśmy dalej.
 Na wszelki wypadek wzięliśmy cały dobytek ze sobą i poszliśmy na dworzec autobusowy. Transport miał być publiczny, ale w informacji dowiedzieliśmy się, że busy do miejsca oddalonego około 30 km od Miri nie jeżdżą. Jak zwykle zamówiliśmy sprawdzonego Graba, który za 35 MYR zawiózł nas na jedną z najpiękniejszych plaż.
@@ -27,7 +26,7 @@ U tego samego sprzedawcy zostawiliśmy nasze plecaki i poszliśmy na spacer. Pia
 
 Okazało się, że oprócz nas na ten sam pomysł biwakowania wpadła grupa rowerzystów. Rozbiliśmy namiot na drewnianym podeście, zaraz przy ulicy i straganach. 
 
-{% include subtitle.md date="Dzień 3 (11.04.2019)" %}
+{% include {{page.inc_prefix}}subtitle.md date="Dzień 3 (11.04.2019)" %}
 
 Noc, o dziwo, nie przebiegła zbyt spokojnie. Około 2 nad ranem (lub raczej w samym środku nocy) przyjechała śmieciarka, która była tak głośna, jakby obok nas lądowało UFO. Obudziła dziewczyny z namiotu obok, które zaczęły się krzątać i hałasować. A już kilka godzin później mieliśmy kolejną pobudkę - tym razem nie hałasy, a zapach. Wszędzie dookoła pachniało spalenizną. W takich warunkach ciężko było spać, dlatego przed szóstą już byłam na nogach i fotografowałam wchód słońca przebijający się przez opary dymu. Podobno farmerzy spalają lasy, żeby zakładać plantacje, bo to najtańszy sposób. Niestety palą się nie tylko drzewa i rośliny na powierzchni, ale też pod ziemią. Dlatego nie widać ognia, a tylko wydobywający się spod ziemi dym. Po kilku godzinach pod zadymie nie było śladu i znowu zrobiła się przepiękna pogoda.
 

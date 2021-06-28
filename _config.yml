@@ -39,6 +39,17 @@ defaults:
       path: "img/*/thumbs/*/"
     values:
       thumb: true
+  -
+    scope:
+      path: "borneo/*"
+    values:
+      prefix: "borneo/"
+      inc_prefix: "borneo/"
+  -
+    scope:
+      path: "borneo/_posts/*"
+    values:
+      layout: "borneo/post"
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

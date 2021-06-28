@@ -3,9 +3,9 @@
 
 	<head>
 
-		{% include head.md %}
+		{% include {{page.inc_prefix}}head.md %}
 		{% if page.map %}
-		{% include head_map.md %}
+		{% include {{page.inc_prefix}}head_map.md %}
 		{% endif %}
 
 	</head>
@@ -17,8 +17,8 @@
 				<div id="main-header">
 					<div id="main-menu">
 						<ul>
-							<li><a href="/" title="Blog">Blog</a></li>
-							<li><a href="/map.html" title="Mapa">Mapa</a></li>
+							<li><a href="/{{page.prefix}}" title="Blog">Blog</a></li>
+							<li><a href="/{{page.prefix}}/map.html" title="Mapa">Mapa</a></li>
 							<li><a href="#kontakt" title="Kontakt">Kontakt</a></li>
               {% comment %}
 							<li class="medium"><a href="/" title="Przewodnik">Przewodnik</a></li>
@@ -29,7 +29,7 @@
 						</ul>
 					</div>
 					<div id="main-headerimg">
-						<a href="{{ site.url }}"><img src="/img/mb_full.png" /></a>
+						<a href="{{ site.url }}"><img src="/{{page.prefix}}/img/mb_full.png" /></a>
 					</div>
 				</div>
 
@@ -43,7 +43,7 @@
 
 				<div id="main-footer">
 
-					{% include footer.html %}
+					{% include {{page.inc_prefix}}footer.html %}
 
 				</div>
 

@@ -7,10 +7,10 @@ img_dir: "img/borneo/SIZE/kota_kinabalu"
 img_hd:  "0016.jpg"
 lat: 5.978814489864174
 lon: 116.07287406921385
-categories: kota
+tags: kota
 ---
 
-{% include subtitle.md title="Pierwsze Kota za płota" date="Dzień 1 (28.03.2019)" %}
+{% include {{page.inc_prefix}}subtitle.md title="Pierwsze Kota za płota" date="Dzień 1 (28.03.2019)" %}
 <!--more_start-->
 Kota Kinabalu jest stolicą stanu Sabah, który obejmuje północną część malezyjskiego fragmentu Borneo.
 Według opinii znalezionych w&nbsp;sieci i&nbsp;zasłyszanych podczas naszej podróży nie jest warte szczególnej uwagi.
@@ -52,7 +52,7 @@ Zupełnie nie przeszkadzało to kierowcy, który bił rekordy prędkości i&nbsp
 Ta pełna wrażeń przejażdżka kosztowała 30 MYR od osoby.
 Na miejscu uprzejmy kierowca pomógł nam znaleźć transport, za 60 MYR zostaliśmy przewiezieni 30 km do Secret Place - celu naszej podróży.
 
-{% include subtitle.md title="Kota po raz drugi" date="Dzień 2 (01.04.2019)" %}
+{% include {{page.inc_prefix}}subtitle.md title="Kota po raz drugi" date="Dzień 2 (01.04.2019)" %}
 Podróż powrotna była bardzo podobna do tej do Kudat.
 Tym razem busik był trochę mniejszy, a&nbsp;fotele wygodniejsze.
 Pasy działały tylko na jednym z&nbsp;naszych miejsc, a&nbsp;kierowca był chyba jeszcze odważniejszy niż poprzedni.
@@ -79,7 +79,7 @@ samochodów w&nbsp;mniej popularnych lokalizacjach, jest to zdecydowanie najwygo
 się w&nbsp;azjatyckich miastach. Aplikacja została nam polecona przez naszego gospodarza w&nbsp;Johor, a&nbsp;gdy tylko kupiliśmy malezyjską
 kartę SIM z&nbsp;internetem, stała się naszą podstawową formą transportu.
 
-{% include subtitle.md date="Dzień 3 (05.04.2019)" title="Do trzech razy Kota" %}
+{% include {{page.inc_prefix}}subtitle.md date="Dzień 3 (05.04.2019)" title="Do trzech razy Kota" %}
 Powrotny samolot z&nbsp;Sandakanu mieliśmy o&nbsp;10:00, więc już po 40 minutach lądowaliśmy w&nbsp;Kota.
 Oryginalny plan zakładał, że dopiero następnego dnia wsiądziemy na prom i&nbsp;popłyniemy do Brunei.
 Jednak, żeby nie marnować czasu, postanowiliśmy spróbować zrobić to od razu i&nbsp;prosto z&nbsp;lotniska

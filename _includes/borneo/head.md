@@ -14,10 +14,10 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
 
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,800&amp;subset=latin-ext" rel="stylesheet"> 
-  <link rel="stylesheet" href="/css/style.css" />
-  <link rel="stylesheet" media='only screen and (max-width: 1280px)' href="/css/wide.css" />
-  <link rel="stylesheet" media='only screen and (max-width: 930px)' href="/css/medium.css" />
-  <link rel="stylesheet" media='only screen and (max-width: 640px)' href="/css/small.css" />
+  <link rel="stylesheet" href="/{{page.prefix}}/css/style.css" />
+  <link rel="stylesheet" media='only screen and (max-width: 1280px)' href="/{{page.prefix}}/css/wide.css" />
+  <link rel="stylesheet" media='only screen and (max-width: 930px)' href="/{{page.prefix}}/css/medium.css" />
+  <link rel="stylesheet" media='only screen and (max-width: 640px)' href="/{{page.prefix}}/css/small.css" />
   <script type="text/javascript">
   function wip() {
     alert("O nie! Nad tą sekcją właśnie pracujemy.\nWpadnij do nas za kilka dni! :)");

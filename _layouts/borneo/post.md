@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: borneo/default
 ---
 
 <div class="post-content">
@@ -11,7 +11,7 @@ layout: default
 	<p>
 	{{ content }}
 	<p>
-	<script src="/js/gallery.js" type="text/javascript"></script>
+	<script src="/{{page.prefix}}/js/gallery.js" type="text/javascript"></script>
 
 	<div class="gallery">
 
