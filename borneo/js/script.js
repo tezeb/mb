@@ -1,4 +1,4 @@
-var map_url = 'https://maps.tilehosting.com/styles/positron/{z}/{x}/{y}.png?key=ZrAXb63iqQo965PKtQew';
+var map_url = 'https://api.maptiler.com/maps/voyager/{z}/{x}/{y}.png?key=CYJvymph4MvHHDmYW6FF';
 
 var OpenStreetMap_Mapnik = L.tileLayer(map_url, {
 	attribution: '&copy; Stamen'
