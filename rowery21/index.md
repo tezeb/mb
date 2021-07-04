@@ -10,7 +10,7 @@ layout: rowery21
 
 <div id="posts">
 
-{% for post in site.categories.rowery21 %}
+{% for post in site.categories.borneo %}
 
 <div class="post">
     <a href="{{ post.url }}"><img src="/{{ post.img_dir | replace: "SIZE", "thumbs" }}/{{ post.img_hd }}" />

@@ -1,0 +1,34 @@
+#main-page {
+  min-width: 540px;
+  max-width: 930px;
+  margin: 20px 50px;
+}
+
+#main-footer {
+  min-width: 640px;
+  max-width: 930px;
+}
+
+.wide {
+  display: none;
+}
+
+#main-menu .wide {
+	display: none;
+}
+
+#main-menu li a::after {
+	display: none;
+}
+
+#main-menu ul {
+  padding: 0 50% 0 0;
+}
+
+#new_post_excerpt {
+  margin-bottom: 15px;
+}
+
+.new_post {
+  margin-bottom: 30px;
+}

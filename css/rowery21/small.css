@@ -1,0 +1,45 @@
+#main-page {
+	min-width: 240px;
+	max-width: 640px;
+	margin: 20px 20px;
+}
+
+#main-footer {
+	min-width: 260px;
+	max-width: 640px;
+	overflow: hidden;
+}
+
+.wide {
+	display: none;
+}
+
+#main-menu li a::after {
+	display: none;
+}
+
+#main-menu .wide,
+#main-menu .medium {
+	display: none;
+}
+
+.medium {
+	display: none;
+}
+
+#new_footer {
+	flex-direction: column;
+}
+
+#new_contact > span {
+	float: none;
+	width: 50%;
+}
+
+#main-menu ul {
+  padding: 0;
+}
+
+.new_post {
+  margin-bottom: 15px;
+}
